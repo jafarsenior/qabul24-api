@@ -1,3 +1,13 @@
+
+
+
+
+
+
+
+
+
+
 import bcrypt from 'bcryptjs';
 import cors from 'cors';
 import dotenv from 'dotenv';
@@ -8,7 +18,6 @@ import mongoose from 'mongoose';
 dotenv.config();
 
 const app = express();
-const port = Number(process.env.PORT || 4000);
 const mongoUri = process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/mrms';
 const jwtSecret = process.env.JWT_SECRET || 'mrms-dev-secret';
 const defaultDoctorPassword = process.env.DEFAULT_DOCTOR_PASSWORD || 'doctor123';
@@ -539,12 +548,10 @@ app.use((error, _req, res, _next) => {
 mongoose
   .connect(mongoUri)
   .then(() => {
-    app.listen(port, () => {
-      console.log(`MRMS API server running on http://localhost:${port}`);
-      console.log(`MongoDB connected: ${mongoUri}`);
-    });
+    console.log('MongoDB connected');
   })
   .catch((error) => {
     console.error('MongoDB connection failed:', error.message);
-    process.exit(1);
   });
+
+export default app;
