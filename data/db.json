@@ -1,0 +1,304 @@
+{
+  "users": [
+    {
+      "id": "u1",
+      "name": "Admin User",
+      "email": "admin@qabul24.uz",
+      "phone": "+998901234567",
+      "role": "admin",
+      "createdAt": "2024-01-01"
+    },
+    {
+      "id": "u2",
+      "name": "Dr. Alisher Karimov",
+      "email": "doctor@qabul24.uz",
+      "phone": "+998901234568",
+      "role": "doctor",
+      "createdAt": "2024-01-01"
+    },
+    {
+      "id": "u3",
+      "name": "Bobur Toshmatov",
+      "email": "patient@qabul24.uz",
+      "phone": "+998901234569",
+      "role": "patient",
+      "createdAt": "2024-01-01"
+    },
+    {
+      "id": "u4",
+      "name": "Dr. Malika Yusupova",
+      "email": "doctor2@qabul24.uz",
+      "phone": "+998901234570",
+      "role": "doctor",
+      "createdAt": "2024-01-01"
+    },
+    {
+      "id": "u5",
+      "name": "Dilnoza Rahimova",
+      "email": "patient2@qabul24.uz",
+      "phone": "+998901234571",
+      "role": "patient",
+      "createdAt": "2024-01-01"
+    },
+    {
+      "id": "u6",
+      "name": "Dr. Jasur Mirzaev",
+      "email": "doctor3@qabul24.uz",
+      "phone": "+998901234572",
+      "role": "doctor",
+      "createdAt": "2024-01-01"
+    },
+    {
+      "id": "u7",
+      "name": "Dr. Shahnoza Ergasheva",
+      "email": "doctor4@qabul24.uz",
+      "phone": "+998901234573",
+      "role": "doctor",
+      "createdAt": "2024-01-01"
+    }
+  ],
+  "doctors": [
+    {
+      "id": "d1",
+      "userId": "u2",
+      "name": "Dr. Alisher Karimov",
+      "email": "doctor@qabul24.uz",
+      "phone": "+998901234568",
+      "specialty": "Kardiolog",
+      "department": "Yurak-qon tomir",
+      "experience": 12,
+      "rating": 4.8,
+      "roomNumber": "201",
+      "schedule": [
+        {
+          "dayOfWeek": 1,
+          "startTime": "09:00",
+          "endTime": "17:00",
+          "slotDurationMinutes": 30
+        },
+        {
+          "dayOfWeek": 2,
+          "startTime": "09:00",
+          "endTime": "17:00",
+          "slotDurationMinutes": 30
+        },
+        {
+          "dayOfWeek": 3,
+          "startTime": "09:00",
+          "endTime": "17:00",
+          "slotDurationMinutes": 30
+        },
+        {
+          "dayOfWeek": 4,
+          "startTime": "09:00",
+          "endTime": "17:00",
+          "slotDurationMinutes": 30
+        },
+        {
+          "dayOfWeek": 5,
+          "startTime": "09:00",
+          "endTime": "14:00",
+          "slotDurationMinutes": 30
+        }
+      ]
+    },
+    {
+      "id": "d2",
+      "userId": "u4",
+      "name": "Dr. Malika Yusupova",
+      "email": "doctor2@qabul24.uz",
+      "phone": "+998901234570",
+      "specialty": "Nevropatolog",
+      "department": "Nevrologiya",
+      "experience": 8,
+      "rating": 4.6,
+      "roomNumber": "305",
+      "schedule": [
+        {
+          "dayOfWeek": 1,
+          "startTime": "10:00",
+          "endTime": "18:00",
+          "slotDurationMinutes": 20
+        },
+        {
+          "dayOfWeek": 3,
+          "startTime": "10:00",
+          "endTime": "18:00",
+          "slotDurationMinutes": 20
+        },
+        {
+          "dayOfWeek": 5,
+          "startTime": "10:00",
+          "endTime": "16:00",
+          "slotDurationMinutes": 20
+        }
+      ]
+    },
+    {
+      "id": "d3",
+      "userId": "u6",
+      "name": "Dr. Jasur Mirzaev",
+      "email": "doctor3@qabul24.uz",
+      "phone": "+998901234572",
+      "specialty": "Terapevt",
+      "department": "Umumiy amaliyot",
+      "experience": 5,
+      "rating": 4.3,
+      "roomNumber": "102",
+      "schedule": [
+        {
+          "dayOfWeek": 1,
+          "startTime": "08:00",
+          "endTime": "16:00",
+          "slotDurationMinutes": 15
+        },
+        {
+          "dayOfWeek": 2,
+          "startTime": "08:00",
+          "endTime": "16:00",
+          "slotDurationMinutes": 15
+        },
+        {
+          "dayOfWeek": 4,
+          "startTime": "08:00",
+          "endTime": "16:00",
+          "slotDurationMinutes": 15
+        }
+      ]
+    },
+    {
+      "id": "d4",
+      "userId": "u7",
+      "name": "Dr. Shahnoza Ergasheva",
+      "email": "doctor4@qabul24.uz",
+      "phone": "+998901234573",
+      "specialty": "Dermatolog",
+      "department": "Teri kasalliklari",
+      "experience": 10,
+      "rating": 4.9,
+      "roomNumber": "410",
+      "schedule": [
+        {
+          "dayOfWeek": 2,
+          "startTime": "09:00",
+          "endTime": "17:00",
+          "slotDurationMinutes": 30
+        },
+        {
+          "dayOfWeek": 4,
+          "startTime": "09:00",
+          "endTime": "17:00",
+          "slotDurationMinutes": 30
+        },
+        {
+          "dayOfWeek": 6,
+          "startTime": "09:00",
+          "endTime": "13:00",
+          "slotDurationMinutes": 30
+        }
+      ]
+    }
+  ],
+  "appointments": [
+    {
+      "id": "a1",
+      "ticketNumber": "TKT-2024-0001",
+      "patientId": "u3",
+      "patientName": "Bobur Toshmatov",
+      "patientPhone": "+998901234569",
+      "doctorId": "d1",
+      "doctorName": "Dr. Alisher Karimov",
+      "doctorSpecialty": "Kardiolog",
+      "roomNumber": "201",
+      "date": "2024-12-28",
+      "time": "10:00",
+      "status": "completed",
+      "reason": "Ko'krak og'rig'i",
+      "diagnosis": {
+        "id": "diag1",
+        "appointmentId": "a1",
+        "patientId": "u3",
+        "doctorId": "d1",
+        "doctorName": "Dr. Alisher Karimov",
+        "icdCode": "I20.9",
+        "diseaseName": "Stenokardiya",
+        "description": "Bemorning yurak sohasida og'riq kuzatilgan. EKG ko'rsatkichlari normal chegarada.",
+        "severity": "moderate",
+        "medications": [
+          {
+            "name": "Nitroqliserin",
+            "dosage": "0.5mg",
+            "frequency": "Og'riq bo'lganda",
+            "duration": "1 oy"
+          },
+          {
+            "name": "Aspirin",
+            "dosage": "100mg",
+            "frequency": "Kuniga 1 marta",
+            "duration": "3 oy"
+          }
+        ],
+        "recommendations": "Jismoniy yuklamalardan saqlaning. Stress va qo'zg'alishlardan uzoq bo'ling.",
+        "nextVisitDate": "2025-01-11",
+        "createdAt": "2024-12-28T11:30:00Z"
+      },
+      "createdAt": "2024-12-25T09:00:00Z"
+    },
+    {
+      "id": "a2",
+      "ticketNumber": "TKT-2024-0002",
+      "patientId": "u5",
+      "patientName": "Dilnoza Rahimova",
+      "patientPhone": "+998901234571",
+      "doctorId": "d1",
+      "doctorName": "Dr. Alisher Karimov",
+      "doctorSpecialty": "Kardiolog",
+      "roomNumber": "201",
+      "date": "2024-12-29",
+      "time": "10:30",
+      "status": "confirmed",
+      "reason": "Yurak urishi tez",
+      "createdAt": "2024-12-26T10:00:00Z"
+    },
+    {
+      "id": "a3",
+      "ticketNumber": "TKT-2024-0003",
+      "patientId": "u3",
+      "patientName": "Bobur Toshmatov",
+      "patientPhone": "+998901234569",
+      "doctorId": "d2",
+      "doctorName": "Dr. Malika Yusupova",
+      "doctorSpecialty": "Nevropatolog",
+      "roomNumber": "305",
+      "date": "2024-12-30",
+      "time": "11:00",
+      "status": "pending",
+      "reason": "Bosh og'rig'i",
+      "createdAt": "2024-12-27T14:00:00Z"
+    }
+  ],
+  "credentials": {
+    "admin@qabul24.uz": {
+      "userId": "u1",
+      "password": "admin123"
+    },
+    "doctor@qabul24.uz": {
+      "userId": "u2",
+      "password": "doctor123"
+    },
+    "doctor2@qabul24.uz": {
+      "userId": "u4",
+      "password": "doctor123"
+    },
+    "patient@qabul24.uz": {
+      "userId": "u3",
+      "password": "patient123"
+    },
+    "patient2@qabul24.uz": {
+      "userId": "u5",
+      "password": "patient123"
+    }
+  },
+  "ticketCounter": 4
+}
+
