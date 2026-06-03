@@ -26,7 +26,13 @@ JWT_SECRET=change-this-secret
 DEFAULT_DOCTOR_PASSWORD=doctor123
 ```
 
-3. Serverni ishga tushiring:
+3. MongoDB ni alohida terminalda ishga tushiring:
+
+```bash
+npm run mongo
+```
+
+4. Ikkinchi terminalda serverni ishga tushiring:
 
 ```bash
 npm start

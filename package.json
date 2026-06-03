@@ -7,6 +7,8 @@
   "scripts": {
     "start": "node server.js",
     "dev": "node server.js",
+    "server": "node server.js",
+    "mongo": "C:\\Progra~1\\MongoDB\\Server\\8.2\\bin\\mongod.exe --dbpath ./mongodb-data --bind_ip 127.0.0.1 --port 27017",
     "admin:create": "node create-admin.js",
     "db:clear": "node clear-db.js"
   },
